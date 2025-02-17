@@ -42,9 +42,9 @@ jobs:
           - name: Build and Push Docker Image 🐳
             run: |
               gcloud auth configure-docker --quiet
-              gcloud auth configure-docker europe-west3-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_ARTIFACT_REGISTRY }}/{flutter-app-cicd-id-5}:{v1.0.0}
+              gcloud auth configure-docker europe-west3-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_ARTIFACT_REGISTRY }}/{flutter-app-cicd-id-112447904406664740645}:{v1.0.0}
           
           - name: Run gcloud 
-            run:  gcloud run deploy {cicd-id-5} \--image {IMAGE_TAG} \--region us-central1
+            run:  gcloud run deploy {cicd-id-112447904406664740645} \--image {IMAGE_TAG} \--region us-central1
           - name: This will be your CD ⚙️
             run: echo "This will be your CD ⚙️"
